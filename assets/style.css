@@ -340,6 +340,10 @@ section { padding: 80px 24px; }
   font-size: 14px;
   margin: 0 0 20px;
 }
+.form-block label,
+.form-block [class*="label" i] {
+  color: #ffffff !important;
+}
 
 /* Simple content card (about / thank-you) */
 .content-card {
