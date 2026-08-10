@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Tatvika Works</title>
+<meta name="description" content="Test landing page for measuring buying intent.">
+<link rel="stylesheet" href="/assets/style.css">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pricing — Tatvika Works">
+<meta property="og:description" content="Test landing page for measuring buying intent.">
+<meta property="og:url" content="https://webtracking.tatvikaworks.com/pricing.html">
+<meta property="og:image" content="https://webtracking.tatvikaworks.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pricing — Tatvika Works">
+<meta name="twitter:description" content="Test landing page for measuring buying intent.">
+<meta name="twitter:image" content="https://webtracking.tatvikaworks.com/assets/og-image.png">
+</head>
+<body>
+  <nav>
+    <a class="brand" href="/">Tatvika Works</a>
+    <div class="links">
+      <a href="/pricing.html">Pricing</a>
+      <a href="/about.html">About</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h1>Get Started</h1>
+      <p class="sub">Click below to simulate a purchase click — this records buying intent for testing.</p>
+      <button class="btn" id="buy-btn">Buy Now</button>
+      <div class="confirm" id="confirm-msg">Redirecting…</div>
+      <footer>webtracking.tatvikaworks.com</footer>
+    </div>
+  </main>
+
+<script>
+document.getElementById('buy-btn').addEventListener('click', function () {
+  var count = parseInt(localStorage.getItem('buyIntentClicks') || '0', 10) + 1;
+  localStorage.setItem('buyIntentClicks', String(count));
+  console.log('buy_intent_click', { count: count, ts: new Date().toISOString() });
+  document.getElementById('confirm-msg').classList.add('visible');
+  setTimeout(function () { window.location.href = '/thank-you.html'; }, 600);
+});
+</script>
+</body>
+</html>
