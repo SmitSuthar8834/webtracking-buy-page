@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pricing — Tatvika Works</title>
-<meta name="description" content="Test landing page for measuring buying intent.">
+<meta name="description" content="Simple, transparent pricing to get your product moving.">
 <link rel="stylesheet" href="/assets/style.css">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pricing — Tatvika Works">
-<meta property="og:description" content="Test landing page for measuring buying intent.">
+<meta property="og:description" content="Simple, transparent pricing to get your product moving.">
 <meta property="og:url" content="https://webtracking.tatvikaworks.com/pricing.html">
 <meta property="og:image" content="https://webtracking.tatvikaworks.com/assets/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -17,30 +17,64 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pricing — Tatvika Works">
-<meta name="twitter:description" content="Test landing page for measuring buying intent.">
+<meta name="twitter:description" content="Simple, transparent pricing to get your product moving.">
 <meta name="twitter:image" content="https://webtracking.tatvikaworks.com/assets/og-image.png">
 </head>
 <body>
-  <nav>
-    <a class="brand" href="/">Tatvika Works</a>
-    <div class="links">
-      <a href="/pricing.html">Pricing</a>
-      <a href="/about.html">About</a>
+  <header class="site-nav">
+    <nav>
+      <a class="brand" href="/"><span class="mark"></span>Tatvika Works</a>
+      <div class="links">
+        <a href="/#features">Features</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/about.html">About</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="/pricing.html">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <section style="padding-top: 72px;">
+    <div class="section-head">
+      <div class="kicker">Pricing</div>
+      <h2>One plan. Everything included.</h2>
+      <p>No tiers to compare, no surprise add-ons — just what you need to get moving.</p>
     </div>
-  </nav>
 
-  <main>
-    <div class="card">
-      <h1>Get Started</h1>
-      <p class="sub">Click below to simulate a purchase click — this records buying intent for testing.</p>
-      <button class="btn" id="buy-btn">Buy Now</button>
-      <div class="confirm" id="confirm-msg">Redirecting…</div>
-
-      <div id="crt-embedded-form-1b8109cf-6f7e-4357-808c-65891e07dc67" style="margin-top: 40px;"></div>
-
-      <footer>webtracking.tatvikaworks.com</footer>
+    <div class="pricing-wrap">
+      <div class="pricing-card">
+        <div class="plan-name">Starter Plan</div>
+        <div class="price">$49<span>/month</span></div>
+        <ul class="feature-list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Unlimited projects</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Priority support</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Weekly progress reports</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>Cancel anytime</li>
+        </ul>
+        <button class="btn btn-primary btn-lg" id="buy-btn" style="width: 100%;">Buy Now</button>
+        <div class="confirm" id="confirm-msg">Redirecting…</div>
+      </div>
     </div>
-  </main>
+
+    <div class="form-block">
+      <h3>Talk to us first</h3>
+      <p>Prefer to ask questions before signing up? Fill out the form and we'll get back to you.</p>
+      <div id="crt-embedded-form-1b8109cf-6f7e-4357-808c-65891e07dc67"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand" href="/"><span class="mark"></span>Tatvika Works</a>
+      <div class="links">
+        <a href="/#features">Features</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/about.html">About</a>
+      </div>
+      <div class="copyright">&copy; 2026 Tatvika Works. All rights reserved.</div>
+    </div>
+  </footer>
 
 <script>
 document.getElementById('buy-btn').addEventListener('click', function () {
