@@ -19,6 +19,38 @@
 <meta name="twitter:title" content="Contact Us — Tatvika Works">
 <meta name="twitter:description" content="Get in touch with Tatvika Works.">
 <meta name="twitter:image" content="https://webtracking.tatvikaworks.com/assets/og-image.png">
+<style>
+.crt-animated-embedded-form {
+  width: 100%;
+  animation: crtEmbeddedFormReveal 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  transition: transform 250ms ease, filter 250ms ease;
+  will-change: transform, opacity;
+}
+.crt-animated-embedded-form:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(0 12px 24px rgba(13, 46, 78, 0.18));
+}
+@keyframes crtEmbeddedFormReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .crt-animated-embedded-form {
+    animation: none;
+    transition: none;
+    will-change: auto;
+  }
+  .crt-animated-embedded-form:hover {
+    transform: none;
+  }
+}
+</style>
 </head>
 <body>
   <header class="site-nav">
@@ -46,7 +78,7 @@
     <div class="form-block">
       <h3>Send us a message</h3>
       <p>Fill out the form below and our team will get back to you.</p>
-      <div id="crt-embedded-form-d9e58c36-5c51-4213-927d-0d69b818a735"></div>
+      <div id="crt-embedded-form-45ef20c0-57a4-494c-b427-4eabea04e58a" class="crt-animated-embedded-form"></div>
     </div>
   </section>
 
@@ -77,6 +109,6 @@
 </script>
 <!--Creatio web-tracking script end-->
 
-<script src="https://cdn.creatio.com/JS/crt-embedded-form-loader.js" data-crt-embedded-form-url="https://forms.instantlandings.com/d9e58c36-5c51-4213-927d-0d69b818a735/index.html" data-crt-embedded-form-target="#crt-embedded-form-d9e58c36-5c51-4213-927d-0d69b818a735"></script>
+<script src="https://cdn.creatio.com/JS/crt-embedded-form-loader.js" data-crt-embedded-form-url="https://forms.instantlandings.com/45ef20c0-57a4-494c-b427-4eabea04e58a/index.html" data-crt-embedded-form-target="#crt-embedded-form-45ef20c0-57a4-494c-b427-4eabea04e58a"></script>
 </body>
 </html>
